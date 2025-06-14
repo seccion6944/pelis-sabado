@@ -47,6 +47,8 @@ export default function App() {
     }
   }
 
+  
+
   return (
     <>
       <Navbar parametro={actualizarTexto} parametro2={buscarPelicula} />
