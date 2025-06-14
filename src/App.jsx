@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Carta from "./components/Carta";
 import Navbar from "./components/Navbar";
 
@@ -47,19 +47,23 @@ export default function App() {
     }
   }
 
-  
+  useEffect(
+    () => {
+      alert("Hola")
+    }, []
+  )
 
   return (
     <>
       <Navbar parametro={actualizarTexto} parametro2={buscarPelicula} />
       <section className="flex pt-10 px-10 justify-between">
-        {
+        {/* {
           peliculas.map(
             (elemento) => (
               <Carta imagen={elemento.imagen} titulo={elemento.titulo} />
             )
           )
-        }
+        } */}
       </section>
     </>
   )
